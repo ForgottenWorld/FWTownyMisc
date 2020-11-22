@@ -1,0 +1,7 @@
+name: FWTownyMisc
+version: ${project.version}
+main: it.forgottenworld.fwtownymisc.fwtownymisc.FWTownyMisc
+api-version: 1.16
+depend: [ Towny ]
+authors: [ tigierrei ]
+website: https://forgottenworld.it
