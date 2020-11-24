@@ -17,6 +17,7 @@ public final class FWTownyMisc extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        INSTANCE = this;
         registerListeners();
         registerCommands();
     }
