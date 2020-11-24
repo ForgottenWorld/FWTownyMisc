@@ -5,3 +5,10 @@ api-version: 1.16
 depend: [ Towny ]
 authors: [ tigierrei ]
 website: https://forgottenworld.it
+commands:
+  tcu:
+    aliases:
+      - customupkeep
+      - townycustomupkeep
+    permission: tcu.admin
+    default: op
