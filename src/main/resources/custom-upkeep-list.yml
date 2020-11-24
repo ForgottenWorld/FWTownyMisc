@@ -1,0 +1,12 @@
+#Towns with custom upkeep
+towns-list:
+  exampleTown1:
+    upkeep: 1
+  exampleTown2:
+    upkeep: 1
+#Nations with custom upkeep
+nations-list:
+  exampleNation1:
+    upkeep: 1
+  exampleNation2:
+    upkeep: 1

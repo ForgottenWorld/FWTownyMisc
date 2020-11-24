@@ -9,6 +9,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.IOException;
 import java.util.Objects;
+import java.util.logging.Level;
 
 public final class FWTownyMisc extends JavaPlugin {
 
@@ -18,6 +19,12 @@ public final class FWTownyMisc extends JavaPlugin {
     @Override
     public void onEnable() {
         INSTANCE = this;
+        try {
+            loadConfig();
+        } catch (IOException e) {
+            getLogger().log(Level.SEVERE, "Error while loading the plugin config. Disabling FWTownyMisc...");
+            getPluginLoader().disablePlugin(this);
+        }
         registerListeners();
         registerCommands();
     }
